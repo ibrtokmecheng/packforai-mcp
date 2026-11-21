@@ -18,7 +18,7 @@ import { formatTokenSummary, type TokenSummary } from "./token-summary.js";
 const API_BASE = process.env.PACKFORAI_BASE_URL ?? "https://packforai.com/api/v1";
 const API_KEY = process.env.PACKFORAI_API_KEY;
 
-const server = new McpServer({ name: "packforai", version: "0.1.1" });
+const server = new McpServer({ name: "packforai", version: "0.1.2" });
 
 server.registerTool(
   "convert_document",
@@ -26,7 +26,7 @@ server.registerTool(
     title: "Convert a document to clean, AI-ready Markdown",
     description:
       "Convert a document (PDF, DOCX, PPTX, XLSX, CSV, JSON) into clean, compact, AI-ready Markdown using PackForAI. " +
-      "Provide either a local file `path` or a public `url`. Returns the compact Markdown plus token-savings, ready to " +
+      "Provide either a local file `path` or a public `url`. Returns the compact Markdown plus a token comparison, ready to " +
       "read or paste into a prompt. Use `ocr: true` for scanned / image-only PDFs.",
     inputSchema: {
       path: z.string().optional().describe("Absolute path to a local document file to convert."),

@@ -66,7 +66,7 @@ Once connected, just ask your assistant, for example:
 | `ocr` | boolean | Force OCR for scanned / image-only PDFs (Pro). Default `false`. |
 | `full` | boolean | Return the full `document.md` (e.g. complete spreadsheet tables) instead of the compact version. Default `false`. |
 
-Provide either `path` or `url`. Returns the Markdown plus a token-savings summary.
+Provide either `path` or `url`. Returns the Markdown plus a token comparison.
 
 ## Config
 
