@@ -2,7 +2,7 @@
 
 Convert **PDF, DOCX, PPTX, XLSX, CSV and JSON** into clean, compact, AI-ready Markdown, directly inside Claude, Cursor and any other MCP client. Powered by [PackForAI](https://packforai.com).
 
-Instead of pasting a messy PDF into your AI (broken text, lost tables, wasted tokens), ask your assistant to convert it first: it comes back as clean Markdown with up to 65% fewer tokens.
+Instead of pasting a messy PDF into your AI (broken text, lost tables, wasted tokens), ask your assistant to convert it first: it returns Markdown with a token comparison so you can see whether the output is larger or smaller.
 
 ## What you need
 

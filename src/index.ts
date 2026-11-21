@@ -13,6 +13,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 import { readFile } from "node:fs/promises";
 import { basename } from "node:path";
+import { formatTokenSummary, type TokenSummary } from "./token-summary.js";
 
 const API_BASE = process.env.PACKFORAI_BASE_URL ?? "https://packforai.com/api/v1";
 const API_KEY = process.env.PACKFORAI_API_KEY;
@@ -105,11 +106,10 @@ server.registerTool(
       }
 
       const markdown = job.markdown ?? "";
-      const tokens = job.tokens;
-      const header =
-        tokens && tokens.original != null
-          ? `Converted "${filename}" — ${tokens.original} to ${tokens.compact} tokens (${tokens.savingsPercent}% smaller).\n\n`
-          : `Converted "${filename}".\n\n`;
+      const tokenSummary = formatTokenSummary(job.tokens);
+      const header = tokenSummary
+        ? `Converted "${filename}": ${tokenSummary}.\n\n`
+        : `Converted "${filename}".\n\n`;
       return textResult(header + markdown);
     } catch (error) {
       return errorResult(`Conversion error: ${errMsg(error)}`);
@@ -121,7 +121,7 @@ type JobResult = {
   status: "queued" | "processing" | "completed" | "failed";
   markdown?: string;
   error?: string;
-  tokens?: { original?: number; compact?: number; savingsPercent?: number };
+  tokens?: TokenSummary;
 };
 
 function textResult(text: string) {
