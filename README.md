@@ -1,5 +1,7 @@
 # PackForAI MCP server
 
+[![ibrtokmecheng/packforai-mcp MCP server](https://glama.ai/mcp/servers/ibrtokmecheng/packforai-mcp/badges/score.svg)](https://glama.ai/mcp/servers/ibrtokmecheng/packforai-mcp)
+
 Convert **PDF, DOCX, PPTX, XLSX, CSV and JSON** into clean, compact, AI-ready Markdown, directly inside Claude, Cursor and any other MCP client. Powered by [PackForAI](https://packforai.com).
 
 Instead of pasting a messy PDF into your AI (broken text, lost tables, wasted tokens), ask your assistant to convert it first: it returns Markdown with a token comparison so you can see whether the output is larger or smaller.
