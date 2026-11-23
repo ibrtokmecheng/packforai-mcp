@@ -1,7 +1,7 @@
 {
   "name": "packforai-mcp",
   "version": "0.1.2",
-  "mcpName": "io.github.zymsj8j9z9-ship-it/packforai-mcp",
+  "mcpName": "io.github.ibrtokmecheng/packforai-mcp",
   "description": "MCP server for PackForAI — convert PDF, DOCX, PPTX, XLSX, CSV, JSON into clean, AI-ready Markdown from Claude, Cursor and other MCP clients.",
   "type": "module",
   "bin": {
@@ -34,7 +34,7 @@
   "homepage": "https://packforai.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zymsj8j9z9-ship-it/packforai-mcp.git"
+    "url": "git+https://github.com/ibrtokmecheng/packforai-mcp.git"
   },
   "license": "MIT",
   "engines": {

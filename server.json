@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.zymsj8j9z9-ship-it/packforai-mcp",
+  "name": "io.github.ibrtokmecheng/packforai-mcp",
   "description": "Convert PDF, DOCX, XLSX, CSV, JSON into clean, AI-ready Markdown via the PackForAI API.",
   "repository": {
-    "url": "https://github.com/zymsj8j9z9-ship-it/packforai-mcp",
+    "url": "https://github.com/ibrtokmecheng/packforai-mcp",
     "source": "github"
   },
   "version": "0.1.2",
