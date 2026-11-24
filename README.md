@@ -9,7 +9,7 @@ Instead of pasting a messy PDF into your AI (broken text, lost tables, wasted to
 ## What you need
 
 - **Node.js 18+**
-- A **PackForAI API key** (Pro plan). Create one at [packforai.com/account](https://packforai.com/account).
+- A **PackForAI API key**. Every plan includes API access, the free plan too (3 conversions a day, files up to 10 MB). Create a key at [packforai.com/account](https://packforai.com/account) after signing in.
 
 ## Install
 
