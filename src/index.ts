@@ -6,7 +6,7 @@
  * JSON files into clean, compact, AI-ready Markdown via the PackForAI API, so
  * Claude, Cursor and other MCP clients can convert documents inline.
  *
- * Auth: set PACKFORAI_API_KEY (get one at https://packforai.com/account, Pro plan).
+ * Auth: set PACKFORAI_API_KEY (get one at https://packforai.com/account; every plan, the free plan allows 3 conversions a day).
  */
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
@@ -41,7 +41,7 @@ server.registerTool(
   async ({ path, url, ocr, full }) => {
     if (!API_KEY) {
       return errorResult(
-        "PACKFORAI_API_KEY is not set. Create a key at https://packforai.com/account (Pro plan) and set it in this MCP server's config."
+        "PACKFORAI_API_KEY is not set. Create a key at https://packforai.com/account (every plan, free included) and set it in this MCP server's config."
       );
     }
     if (!path && !url) {
