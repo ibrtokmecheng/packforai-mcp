@@ -37,7 +37,6 @@ Restart Claude Desktop.
 
 This repository is also a Cursor plugin (`.cursor-plugin/plugin.json` and `mcp.json`): install it as a plugin and set `PACKFORAI_API_KEY` in the plugin's configuration. Or add the server to your MCP config by hand:
 
-
 Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
 
 ```json
