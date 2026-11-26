@@ -35,6 +35,9 @@ Restart Claude Desktop.
 
 ### Cursor
 
+This repository is also a Cursor plugin (`.cursor-plugin/plugin.json` and `mcp.json`): install it as a plugin and set `PACKFORAI_API_KEY` in the plugin's configuration. Or add the server to your MCP config by hand:
+
+
 Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
 
 ```json
@@ -65,7 +68,7 @@ Once connected, just ask your assistant, for example:
 |-------|------|-------------|
 | `path` | string | Absolute path to a local document file. |
 | `url` | string | Public https URL of a document to fetch and convert. |
-| `ocr` | boolean | Force OCR for scanned / image-only PDFs (Pro). Default `false`. |
+| `ocr` | boolean | Force OCR for scanned / image-only PDFs (paid plans: Pro, Scale, Day Pass). Default `false`. |
 | `full` | boolean | Return the full `document.md` (e.g. complete spreadsheet tables) instead of the compact version. Default `false`. |
 
 Provide either `path` or `url`. Returns the Markdown plus a token comparison.

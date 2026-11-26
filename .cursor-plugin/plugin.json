@@ -1,0 +1,22 @@
+{
+  "name": "packforai",
+  "description": "Convert PDF, DOCX, PPTX, XLSX, CSV and JSON into clean, AI-ready Markdown inside Cursor, keeping headings and tables, with a token comparison for every file.",
+  "version": "0.1.3",
+  "author": { "name": "PackForAI" },
+  "homepage": "https://packforai.com",
+  "repository": "https://github.com/ibrtokmecheng/packforai-mcp",
+  "license": "MIT",
+  "keywords": ["pdf", "markdown", "document-conversion", "docx", "xlsx", "pptx", "ocr", "rag", "mcp"],
+  "logo": "assets/logo.png",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "PACKFORAI_API_KEY": {
+        "type": "string",
+        "title": "PackForAI API key",
+        "description": "Create a key at https://packforai.com/account. Every plan includes API access, the free plan too."
+      }
+    },
+    "required": ["PACKFORAI_API_KEY"]
+  }
+}

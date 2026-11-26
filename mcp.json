@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "packforai": {
+      "command": "npx",
+      "args": ["-y", "packforai-mcp"],
+      "env": {
+        "PACKFORAI_API_KEY": "${PACKFORAI_API_KEY}"
+      }
+    }
+  }
+}
